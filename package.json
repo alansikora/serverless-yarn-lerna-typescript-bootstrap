@@ -1,0 +1,13 @@
+{
+  "name": "serverless-yarn-lerna-typescript",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

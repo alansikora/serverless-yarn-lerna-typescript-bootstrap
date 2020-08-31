@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.build.json",
+
+  "compilerOptions": {
+    "baseUrl": "./packages",
+    "paths": {
+      "@alansikora/sample-package": ["sample-package/src"],
+      "@alansikora/demo-package": ["demo-package/src"]
+    }
+  }
+}

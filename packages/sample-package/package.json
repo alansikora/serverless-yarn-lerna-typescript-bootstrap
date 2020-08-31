@@ -1,0 +1,21 @@
+{
+  "name": "@alansikora/sample-package",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist && rm -rf tsconfig.build.tsbuildinfo",
+    "compile": "tsc -b tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@alansikora/demo-package": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "~4.0.2"
+  }
+}

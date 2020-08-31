@@ -1,0 +1,22 @@
+service: serverless-lerna-yarn-service2
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-bundle
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-1
+  stage: dev
+
+functions:
+  get:
+    handler: handler.main
+    events:
+      - http: GET /
+
+# This still does not work, serverless-bundle still does not support it (PR there would be great)
+custom:
+  bundle:
+    excludeFiles: "**/*.test.js"
