@@ -1,4 +1,4 @@
-# Serverless Lerna + Yarn Workspaces Monorepo Starter
+# Serverless Lerna + Yarn Workspaces + Typescript Monorepo Starter
 
 A Serverless monorepo starter that uses [Lerna](https://lerna.js.org) and [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/).
 
@@ -10,26 +10,6 @@ A Serverless monorepo starter that uses [Lerna](https://lerna.js.org) and [Yarn 
 - Uses Yarn Workspaces to hoist packages to the root `node_modules/` directory
 
 -----
-
-## Installation
-
-To create a new Serverless project
-
-``` bash
-$ serverless install --url https://github.com/AnomalyInnovations/serverless-lerna-yarn-starter --name my-project
-```
-
-Enter the new directory
-
-``` bash
-$ cd my-project
-```
-
-Install NPM packages for the entire project
-
-``` bash
-$ yarn
-```
 
 ## How It Works
 
